@@ -162,5 +162,9 @@ li a.active {
       #left_section #info #description {
     font-size: 10px;
   }
+  #left_section footer{
+    font-size: 10px;
+    color: rgb(37, 36, 36);
+  }
 } 
    
