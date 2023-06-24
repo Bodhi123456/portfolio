@@ -159,5 +159,8 @@ li a.active {
         border-color: rgb(152, 218, 218);
         cursor: pointer;
       }
+      #left_section #info #description {
+    font-size: 12px;
+  }
 } 
    
