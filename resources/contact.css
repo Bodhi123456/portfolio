@@ -14,13 +14,15 @@
   flex-direction: column;
   width: 18%;
 }
+#mains #navigation #nav ul{
+  padding-left: 0;
+}
 #mains #navigation #nav ul li {
   list-style-type: none;
   align-self: center;
   padding: 26px 0px;
   cursor: pointer;
   font-weight: 500;
-  margin-right: 30px;
   text-decoration: none;
   font-size: 15px;
   text-align: center;
@@ -39,13 +41,12 @@ li a {
 }
 #mains #navigation #follow #logo {
   display: flex;
-  align-items: center;
-  
+  justify-content: center;
+  column-gap: 15px;
 }
 #mains #navigation #follow #logo #insta {
   width: 25px;
   height: auto;
-  margin-left: 25px;
   border-radius: 30%;
 }
 #mains #navigation #follow #logo #insta img {
@@ -57,7 +58,6 @@ li a {
 #mains #navigation #follow #logo #fb {
   width: 25px;
   height: auto;
-  margin-left: 30px;
   border-radius: 50%;
 }
 #mains #navigation #follow #logo #fb img {
@@ -69,150 +69,231 @@ li a {
 #mains #navigation #follow #logo #linkedin {
   width: 25px;
   height: auto;
-  margin-left: 30px;
   border-radius: 50%;
 }
- #mains #navigation #follow #logo #linkedin img{
+#mains #navigation #follow #logo #linkedin img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-#mains #navigation #follow #logo #twitter{
-    width: 25px;
-    height: auto;
-    margin-left: 30px;
-    margin-right: 20px;
+#mains #navigation #follow #logo #twitter {
+  width: 25px;
+  height: auto;
 }
-#mains #navigation #follow #logo #twitter img{
-    width: 100%;
-    height: 100%;
+#mains #navigation #follow #logo #twitter img {
+  width: 100%;
+  height: 100%;
 }
-#mains #navigation #copy p{
-    font-weight: 200;
-    font-size: small;
-    text-align: center;
-    margin: 60px 0px 0px 0px;
-    line-height: 1.5;
+#mains #navigation #copy p {
+  font-weight: 200;
+  font-size: small;
+  text-align: center;
+  margin: 60px 0px 0px 0px;
+  line-height: 1.5;
 }
-#mains #navigation #follow #logo #twitter img:hover{
-    width: 110%;
+#mains #navigation #follow #logo #twitter img:hover {
+  width: 110%;
 }
-#mains #navigation #follow #logo #linkedin img:hover{
-    width: 110%;
+#mains #navigation #follow #logo #linkedin img:hover {
+  width: 110%;
 }
-#mains #navigation #follow #logo #fb img:hover{
-    width: 110%;
+#mains #navigation #follow #logo #fb img:hover {
+  width: 110%;
 }
-#mains #navigation #follow #logo #insta img:hover{
-    width: 110%;
-    background-color: rgb(243, 217, 229);
+#mains #navigation #follow #logo #insta img:hover {
+  width: 110%;
+  background-color: rgb(243, 217, 229);
 }
-#mains #content{
-    display: flex;
-    flex-direction: column;
-    background-image: url(gif.gif);
-    background-repeat: no-repeat;
-   width: 100%;
-   height: 100%;
-   background-size: 100%;
-   
-}   
+#mains #content {
+  display: flex;
+  flex-direction: column;
+  background-image: url(gif.gif);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
 #mains #content #title {
-    font-size: 26px;
-    padding-left: 180px;
-    padding-top: 8px;
-    padding-right: 70px;
-    
+  font-size: 26px;
+  padding-left: 180px;
+  padding-top: 8px;
+  padding-right: 70px;
 }
-#mains #content #title h1{
-    letter-spacing: 2px;
+#mains #content #title h1 {
+  letter-spacing: 2px;
 }
-#mains #content #title #a{
-    font-size: 20px;
-    line-height: 20px;
-
+#mains #content #title #a {
+  font-size: 20px;
+  line-height: 20px;
 }
-#mains #content #form{
-    position:absolute;
-    top:62%;
-    left:40%;
-    transform: translate(-30%, -30%);
-    width: 400px;
-    background: rgb(208, 220, 240);
-    border-radius: 10px;
-
+#mains #content #form {
+  position: absolute;
+  top: 62%;
+  left: 40%;
+  transform: translate(-30%, -30%);
+  width: 400px;
+  background: rgb(208, 220, 240);
+  border-radius: 10px;
 }
-#mains #content #form p{
-    font-size: 22px;
-    text-align: center;
-    padding: 0px 0px 20px 0px;
-    border-bottom: 1px;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-style: solid;
-    border-color: rgb(127, 133, 141);
+#mains #content #form p {
+  font-size: 22px;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 1px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: rgb(127, 133, 141);
 }
-#mains #content #form form{
-    padding: 0px 40px;
-    box-sizing: border-box;
-
+#mains #content #form form {
+  padding: 0px 40px;
+  box-sizing: border-box;
 }
-form #txt_field{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
+form #txt_field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
 }
-#txt_field input{
-    width: 100%;
-    padding: 0px 5px;
-    height: 20px;
-    font-size: 15px;
-    border: none;
-    background: none;
-    outline: none;
+#txt_field input {
+  width: 100%;
+  padding: 0px 5px;
+  height: 20px;
+  font-size: 15px;
+  border: none;
+  background: none;
+  outline: none;
 }
-::placeholder{
-    color: #adadad;
+::placeholder {
+  color: #adadad;
 }
 
-#txt_field span::before{
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: #72bdf0;
-    transition: 0.4s; 
+#txt_field span::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #72bdf0;
+  transition: 0.4s;
 }
-#txt_field input:focus ~ span::before{
-    width: 100%;
-
+#txt_field input:focus ~ span::before {
+  width: 100%;
 }
-input[type="submit"]{
-    width: 100%;
-    height: 40px;
-    border: 1px solid;
-    background: #72bdff;
-    border-radius: 25px;
-    font-size: 18px;
-    color: aliceblue;
-    font-weight: 700px;
-    cursor: pointer;
-    outline: none;
-    margin-bottom: 6px;
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  background: #72bdff;
+  border-radius: 25px;
+  font-size: 18px;
+  color: aliceblue;
+  font-weight: 700px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 6px;
 }
-input[type="submit"]:hover{
-    border-color: #3e99e9;
-    transition: 0.4s;
-    background-color: rgb(208, 221, 233);
-    color:#3e99e9 ;
-    
+input[type="submit"]:hover {
+  border-color: #3e99e9;
+  transition: 0.4s;
+  background-color: rgb(208, 221, 233);
+  color: #3e99e9;
 }
-#mains #content #form #footer{
+#mains #content #form #footer {
   color: rgb(2, 119, 119);
   font-size: 15px;
   border-bottom: 0px;
   padding-bottom: 0px;
+}
+#mains #content #line{
+  border-bottom: 2px solid grey;
+}
+
+
+@media only screen and (max-width: 600px){
+  #mains #navigation{
+    width: 35%;
+  }
+  #mains #navigation #nav ul li{
+    font-size: 12px;
+  }
+  #mains #navigation #follow h3 {
+    font-size: 15px;
+  }
+
+  #mains #navigation #follow #logo{
+    column-gap: 10px;
+  }
+  #mains #navigation #follow #logo #insta{
+  width: 20px;
+  height: 20px;
+  }
+  #mains #navigation #follow #logo #insta img{
+  width: 100%
+  }
+  #mains #navigation #follow #logo #fb{
+    width: 20px;
+    height: 20px;
+  }
+  #mains #navigation #follow #logo #fb img {
+  width: 100%;
+  }
+  #mains #navigation #follow #logo #linkedin{
+    width: 20px;
+  height: 20px;
+  }
+  #mains #navigation #follow #logo #linkedin img{
+  width: 100%;
+  }
+  #mains #navigation #follow #logo #twitter {
+    width: 20px;
+    height: 20px;
+  }
+  #mains #navigation #follow #logo #twitter img{
+  width: 100%;
+  }
+  #mains #content{
+    width:65%;
+  }
+    #mains #content #title {
+      font-size: 16px;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 20px;
+    }
+    #mains #content #title h1 {
+      letter-spacing: 1px;
+    }
+    #mains #content #title #a {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    #mains #content #form {
+      position: static;
+      top: 0%;
+      left: 0%;
+      transform: none;
+      width: 220px;
+      background: rgb(208, 220, 240);
+      border-radius: 10px;
+      align-self: center;
+      margin-top: 30px;
+    }
+    #mains #content #form p {
+      font-size: 20px;
+      text-align: center;
+      padding: 0px 0px 20px 0px;
+      border-bottom: 1px;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-style: solid;
+      border-color: rgb(127, 133, 141);
+    }
+    #mains #content #form form {
+      padding: 0px 20px;
+      box-sizing: border-box;
+    }
 }
