@@ -296,4 +296,8 @@ input[type="submit"]:hover {
       padding: 0px 20px;
       box-sizing: border-box;
     }
+      #mains #content #form p {
+      font-size: 15px;
+    }
+    
 }
