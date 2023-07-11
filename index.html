@@ -28,7 +28,7 @@
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">SERVICES</a></li>
             <li><a href="#">SKILLS</a></li>
-            <li><a href="#">EDUCATIONS</a></li>
+            <li><a href="resources/education.html">EDUCATIONS</a></li>
             <li><a href="#">WORKS</a></li>
             <li><a href="resources/contact.html">CONTACT</a></li>
           </ul>
@@ -54,11 +54,24 @@
            <img src="resources/tech.gif ">
         </div>
         <div id="b">
-          <p id="description">Web developer | Photographer | Video editor | </p>
-          <a href="" ><button id="button">My Resume</button></a>
+          <div id="description2"><span id="element"></span></div>
+          <div id="button1"><a href="" ><button id="button">My Resume</button></a></div>
         </div>
 
       </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Photographer ', 'Video ^700 editor ', 'Web ^700 designer', 'Web ^700  developer' ],
+        typeSpeed: 50,
+        smartBackspace: true, 
+        loop: true,
+        loopCount: Infinity,
+        fadeOut: true,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 500,
+      });
+    </script>
   </body>
 </html>
