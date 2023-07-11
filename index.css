@@ -22,6 +22,7 @@ body {
   border-radius: 50%;
   align-self: center;
   margin-top: 30px;
+  box-shadow: 0 2px 8px 10px rgba(148, 191, 241, 0.548), 0 5px 12px 5px rgba(118, 164, 180, 0.493); 
 }
 
 #profile_img img {
