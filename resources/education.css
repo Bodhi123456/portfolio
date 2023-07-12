@@ -243,7 +243,6 @@ body{
     width: 100%;
     }
     #content{
-      width: 75%;
       background: rgb(2,0,36);
       background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(202, 210, 233) 0%, rgb(170, 215, 228) 29%, rgb(187, 230, 222) 59%, rgb(203, 232, 238) 69%, rgb(202, 230, 233) 74%);
     }
@@ -259,9 +258,9 @@ body{
       margin-top: 100px;
     }
   #content #content2 i{
-    font-size: 1em;
+    font-size: 0.80em;
     margin-top: 10px;
-    margin-right: 5px;
+    margin-right: 4px;
     margin-left: 6px;
     color: rgb(187, 148, 66);
   }
