@@ -1,0 +1,297 @@
+body{
+  margin: 0;
+}
+#main {
+    display: flex;
+    height: 110vh;
+  }
+  #main #navigation {
+    background-color: rgb(177, 223, 241);
+    border: right 2px;
+    border-right-style: initial;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+  }
+  #main #navigation #nav ul{
+    padding-left: 0;
+  }
+  #main #navigation #nav ul li {
+    list-style-type: none;
+    align-self: center;
+    padding: 26px 0px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+  }
+  li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  #main #navigation #nav ul li a:hover {
+    color: rgb(52, 52, 240);
+    font-size: 18px;
+  }
+  #main #navigation #follow h3 {
+    text-align: center;
+  }
+  #main #navigation #follow #logo {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    height: 30px;
+  }
+  #main #navigation #follow #logo #insta {
+    width: 25px;
+    height: auto;
+    border-radius: 30%;
+  }
+  #main #navigation #follow #logo #insta img {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(184, 188, 231);
+    border-radius: 30%;
+  }
+  #main #navigation #follow #logo #fb {
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+  }
+  #main #navigation #follow #logo #fb img {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 50%;
+  }
+  #main #navigation #follow #logo #linkedin {
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+  }
+  #main #navigation #follow #logo #linkedin img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  #main #navigation #follow #logo #twitter {
+    width: 25px;
+    height: auto;
+  }
+  #main #navigation #follow #logo #twitter img {
+    width: 100%;
+    height: 100%;
+  }
+  #main #navigation #copy p {
+    font-weight: 200;
+    font-size: small;
+    text-align: center;
+    margin: 60px 0px 0px 0px;
+    line-height: 1.5;
+  }
+  #main #navigation #follow #logo #twitter img:hover {
+    width: 110%;
+  }
+  #main #navigation #follow #logo #linkedin img:hover {
+    width: 110%;
+  }
+  #main #navigation #follow #logo #fb img:hover {
+    width: 110%;
+  }
+  #main #navigation #follow #logo #insta img:hover {
+    width: 110%;
+    background-color: rgb(243, 217, 229);
+  }
+  #content{
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(2,0,36); 
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(144,162,207,1) 0%, rgba(101,150,163,1) 29%, rgba(131,217,201,1) 59%, rgba(179,219,227,1) 69%, rgba(199,224,226,1) 74%);
+  }
+  #content #title {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    color: rgb(56, 56, 56);
+  }
+  #content #content2{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  #content #content2 #content-part1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #content #content2 #content-part2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #content #content2 #content-part3{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #content #content2 #content-part1 #part1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  #content #content2 #content-part1 #part2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  #content #content2 #content-part2 #part1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  #content #content2 #content-part2 #part2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  #content #content2 #content-part3 #part1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  #content #content2 #content-part3 #part2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  #content #content2 i{
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    color: rgb(187, 148, 66);
+  }
+  #text{
+    display: flex;
+    flex-direction: column;
+  }
+  #text #year{
+    font-size: 1em;
+    font-weight: 600;
+  }
+  #text #certificate{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: -8px;
+  }
+  #text #institution{
+    font-size: 0.8em;
+    margin-top: -8px;
+  }
+
+  @media only screen and (max-width: 600px){
+    #main #navigation{
+      width: 35%;
+    }
+    #main #navigation #nav ul li{
+      font-size: 12px;
+    }
+    #main #navigation #follow h3 {
+      font-size: 15px;
+    }
+  
+    #main #navigation #follow #logo{
+      column-gap: 10px;
+    }
+    #main #navigation #follow #logo #insta{
+    width: 20px;
+    height: 20px;
+    }
+    #main #navigation #follow #logo #insta img{
+    width: 100%
+    }
+    #main #navigation #follow #logo #fb{
+      width: 20px;
+      height: 20px;
+    }
+    #main #navigation #follow #logo #fb img {
+    width: 100%;
+    }
+    #main #navigation #follow #logo #linkedin{
+      width: 20px;
+    height: 20px;
+    }
+    #main #navigation #follow #logo #linkedin img{
+    width: 100%;
+    }
+    #main #navigation #follow #logo #twitter {
+      width: 20px;
+      height: 20px;
+    }
+    #main #navigation #follow #logo #twitter img{
+    width: 100%;
+    }
+    #content{
+      width: 75%;
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(202, 210, 233) 0%, rgb(170, 215, 228) 29%, rgb(187, 230, 222) 59%, rgb(203, 232, 238) 69%, rgb(202, 230, 233) 74%);
+    }
+    #content #title {
+      text-align: center;
+      width: 100%;
+      height: 40px;
+      font-size: 1.2em;
+      color: rgb(31, 30, 30);
+      margin-top: 120px;
+    }
+    #content #content2{
+      margin-top: 100px;
+    }
+  #content #content2 i{
+    font-size: 1em;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 6px;
+    color: rgb(187, 148, 66);
+  }
+  #text{
+    display: flex;
+    flex-direction: column;
+  }
+  #text #year{
+    font-size: 0.5em;
+    font-weight: 600;
+  }
+  #text #certificate{
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-top: -8px;
+  }
+  #text #institution{
+    font-size: 0.4em;
+    margin-top: -8px;
+  }
+  #content #content2 #content-part1{
+    width: 40%;
+    height: 70%;
+  }
+  #content #content2 #content-part2{
+    width: 40%;
+    height: 70%;
+  }
+  #content #content2 #content-part3{
+    width: 40%;
+    height: 70%;
+  }
+  }
